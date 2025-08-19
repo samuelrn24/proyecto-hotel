@@ -10,7 +10,7 @@
 This implementation uses only the C++ standard library.
 
 - **Operating System (used):** macOS 15.6
--**Compiler** g++ 11+ (MinGW-w64) o MSVC 2019/2022
+- **Compiler** g++ 11+ (MinGW-w64) o MSVC 2019/2022
 - **C++ standard:** C++17
 - **Editor/IDE:** Visual Studio Code
 
