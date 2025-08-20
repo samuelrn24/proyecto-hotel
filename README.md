@@ -1,7 +1,7 @@
 # proyecto-hotel - practica1
 
 ## Student
-- **Full name:** Nicolas Reyes, Samuel Ramírez and Tomás Vera
+- **Full name:** Nicolás Reyes, Samuel Ramírez and Tomás Vera
 - **Class number:** Estructuras de Datos y Algoritmos 1 - S2566-0936
 
 ---
