@@ -1,24 +1,10 @@
-// main.cpp
-// Entry point for the hotel guest management program. This file
-// implements a simple text-based menu that allows the user to
-// interact with a doubly linked list of guests. The user can load
-// data from a file, add new guests, search for existing guests by
-// name or room, display the lists in different orders and consult
-// neighbouring rooms. All data is persisted to the same text file
-// used as input.
-
 #include "guest_list.h"
 #include <iostream>
 #include <limits>
-#include <fstream>   // 👈 usamos fstream en vez de filesystem
+#include <fstream> 
 
-// Uso del espacio de nombres estándar para simplificar la sintaxis
 using namespace std;
 
-// Clears any remaining input on the current line. This helper is
-// used after reading numeric input to consume the trailing newline
-// character, ensuring that subsequent getline() calls retrieve
-// complete strings.
 static void clearInput() {
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
@@ -26,7 +12,6 @@ static void clearInput() {
 int main() {
     const string filename = "hotel.txt";
 
-    // Verificar si el archivo existe, y si no, crearlo vacío
     ifstream fin(filename);
     if (!fin.is_open()) {
         ofstream fout(filename);
@@ -37,7 +22,6 @@ int main() {
     }
 
     GuestList list;
-    // Load existing data from file on startup
     list.loadFromFile(filename);
 
     int option = 0;
@@ -153,11 +137,9 @@ int main() {
             break;
         }
         case 3:
-            // Display alphabetical
             list.displayAlphabetical();
             break;
         case 4:
-            // Display arrival
             list.displayArrival();
             break;
         case 5: {
