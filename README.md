@@ -24,3 +24,4 @@ El programa gestiona un registro de huéspedes de hotel usando **dos listas dobl
 ---
 
 ## Video Explanation
+https://youtu.be/7trF6QJbfMU
